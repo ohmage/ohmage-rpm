@@ -1,5 +1,5 @@
 Name: ohmage
-Version: 2.14
+Version: 2.15
 Release: 28
 Source: %{name}-%{version}.tar.gz
 License: Apache2
