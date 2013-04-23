@@ -6,7 +6,7 @@ mkdir -p ~/rpmbuild/SPECS
 cp -f ohmage.spec ~/rpmbuild/SPECS
 
 mkdir -p ~/rpmbuild/SOURCES
-cp -f ohmage-server-2.14.tar.gz ~/rpmbuild/SOURCES
+cp -f ohmage-2.14.tar.gz ~/rpmbuild/SOURCES
 
 #build
 rpmbuild -ba ~/rpmbuild/SPECS/ohmage.spec
