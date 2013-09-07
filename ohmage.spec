@@ -1,5 +1,5 @@
 Name: ohmage
-Version: 2.15
+Version: 2.16
 Release: 28
 Source: %{name}-%{version}.tar.gz
 License: Apache2
@@ -50,6 +50,7 @@ mkdir -p  %{buildroot}/var/lib/ohmage/images
 mkdir -p  %{buildroot}/var/lib/ohmage/documents
 mkdir -p  %{buildroot}/var/lib/ohmage/videos
 mkdir -p  %{buildroot}/var/log/ohmage/audits
+cp ohmage.conf %{buildroot}/etc/
 cp -Rf scripts  %{buildroot}/usr/lib/ohmage/
 cp -Rf sql  %{buildroot}/usr/lib/ohmage/
 cp -Rf warfiles  %{buildroot}/usr/lib/ohmage/
@@ -153,6 +154,7 @@ echo "Self registration disabled."
 %files
 
 %files server
+/etc/ohmage.conf
 /usr/lib/ohmage/warfiles
 /usr/lib/ohmage/sql
 /usr/lib/ohmage/scripts
